@@ -1,0 +1,23 @@
+{
+  "name": "hacker_rank_practise_notes",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "dependencies": {},
+  "devDependencies": {
+    "jest": "^24.9.0"
+  },
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Kennethz374/hacker_rank_practise_notes.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Kennethz374/hacker_rank_practise_notes/issues"
+  },
+  "homepage": "https://github.com/Kennethz374/hacker_rank_practise_notes#readme"
+}
