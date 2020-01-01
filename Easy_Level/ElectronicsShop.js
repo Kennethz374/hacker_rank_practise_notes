@@ -48,3 +48,4 @@ const n = [5, 2, 8];
 const m = [3, 1];
 
 console.log(getMoneySpent(b,n,m)) // output = 9
+console.log(getMoneySpent(10,[12],[13])) //output = -1
