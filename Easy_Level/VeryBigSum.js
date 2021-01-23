@@ -1,4 +1,3 @@
 function aVeryBigSum(ar) {
-  return ar.reduce((a,c)=> a + c);
-
+  return ar.reduce((a, c) => a + c);
 }

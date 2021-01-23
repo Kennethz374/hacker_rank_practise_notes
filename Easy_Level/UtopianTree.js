@@ -11,12 +11,12 @@ const utopianTree = (t, n) => {
     }
   }
   return height;
-}
+};
 
-console.log(utopianTree(1,0))
-console.log(utopianTree(1,1))
-console.log(utopianTree(1,2))
-console.log(utopianTree(1,3))
-console.log(utopianTree(1,4))
-console.log(utopianTree(1,5))
-console.log(utopianTree(1,100))
+console.log(utopianTree(1, 0));
+console.log(utopianTree(1, 1));
+console.log(utopianTree(1, 2));
+console.log(utopianTree(1, 3));
+console.log(utopianTree(1, 4));
+console.log(utopianTree(1, 5));
+console.log(utopianTree(1, 100));
