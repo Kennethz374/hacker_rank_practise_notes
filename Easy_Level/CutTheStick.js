@@ -9,13 +9,23 @@ let ar = [5, 4, 4, 2, 2, 8];
 let ans = ar.filter(a => a !== 4);
 
 const CutTheStick = arr => {
+  // let ans = [arr.length];
+  // for (let i = arr.length; i >= 0; i--) {
+  //   let min = Math.min(...arr);
+  //   arr = arr.filter(x => x !== min);
+  //   ans.push(arr.length);
+  // }
+  // return ans.filter(x => x !== 0);
+
   let ans = [arr.length];
-  for (let i = arr.length; i >= 0; i--) {
-    let min = Math.min(...arr);
-    arr = arr.filter(x => x !== min);
-    ans.push(arr.length);
+
+  while (arr.length !== 0) {
+    arr = arr.filter(x => x !== Math.min(...arr));
+    if (arr.length !== 0) {
+      ans.push(arr.length);
+    }
   }
-  return ans.filter(x => x !== 0);
+  return ans;
 };
 
 console.log(CutTheStick(ar));
