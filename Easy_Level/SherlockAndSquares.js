@@ -19,4 +19,4 @@ const squares = (a, b) => {
   return ans;
 };
 
-squares(s, e);
+console.log(squares(s, e));
