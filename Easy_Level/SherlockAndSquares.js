@@ -9,38 +9,27 @@
 const s = 10;
 const e = 1000;
 
-const a = 3;
-const b = 9;
+const a = 17;
+const b = 24;
 
 const squares = (a, b) => {
-  // let ans = 0;
-  // for (let i = a; i <= b; i++) {
-  //   if (Number.isInteger(Math.sqrt(i))) {
-  //     ans += 1;
-  //   }
-  // }
-  // return ans;
-
-  let highestInt = Math.floor(Math.sqrt(b));
-  let lowestInt = Math.ceil(Math.sqrt(a));
-  console.log(highestInt, lowestInt);
-  let ans = highestInt - lowestInt;
-  if (Number.isInteger(Math.sqrt(b))) {
-    ans += 1;
+  let lowInt = Math.sqrt(a);
+  let highInt = Math.floor(Math.sqrt(b));
+  if (!Number.isInteger(lowInt)){
+    let upOrDown = Math.floor(lowInt) * Math.floor(lowInt)
+    if (a > upOrDown) {
+      lowInt = Math.floor(lowInt) + 1;
+    } else {
+      lowInt = Math.floor(lowInt)
+    }
   }
-  if (Number.isInteger(Math.sqrt(a))) {
-    ans += 1;
-  }
-  if (ans <= 0) {
-    return 0;
+  if (lowInt > highInt) {
+    return 0
+  } else {
+    return highInt - lowInt +1;
   }
 
-  return ans;
-  // if (a) {
-  //   return ans;
-  // } else {
-  //   return 0;
-  // }
+}
 };
 
 console.log(squares(s, e));
