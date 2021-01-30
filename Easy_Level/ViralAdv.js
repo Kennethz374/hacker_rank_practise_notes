@@ -14,3 +14,5 @@ const viralAd = n => {
 };
 
 console.log(viralAd(day));
+
+d;
